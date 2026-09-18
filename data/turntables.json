@@ -1,0 +1,65 @@
+{
+  "_readme": [
+    "Real-photo 360 spins. A turntable is a folder of photographs of one dish,",
+    "each shot a fixed number of degrees further around than the last. Playing",
+    "them back in order is what makes a real photo appear to rotate.",
+    "",
+    "To add one:",
+    "  1. Shoot the dish on a rotating stand — 24 frames (every 15 degrees)",
+    "     or 36 frames (every 10 degrees, smoother). Camera must not move.",
+    "  2. Name them 001.jpg, 002.jpg ... in the order they were shot, going",
+    "     anticlockwise as seen from above (that matches a left-to-right drag).",
+    "  3. Put them in  public/photos/turntable/<id>/",
+    "  4. Set frames to how many there are and flip ready to true.",
+    "",
+    "Until ready is true the site falls back to the procedural 3D model, so",
+    "nothing is ever blank in front of a customer.",
+    "",
+    "Keep each frame around 1200px wide and under 200KB (JPEG quality ~78).",
+    "24 frames at that size is about 4MB — fine to preload on wifi, and the",
+    "player loads the first frame instantly and the rest in the background."
+  ],
+
+  "turntables": {
+    "ran-sajji": {
+      "id": "ran-sajji",
+      "menuItemId": "ran-sajji",
+      "fallback3d": "sajji",
+      "frames": 24,
+      "extension": "jpg",
+      "ready": false
+    },
+    "chicken-sulemani-karahi-1kg": {
+      "id": "chicken-sulemani-karahi-1kg",
+      "menuItemId": "chicken-sulemani-karahi-1kg",
+      "fallback3d": "karahi",
+      "frames": 24,
+      "extension": "jpg",
+      "ready": false
+    },
+    "beef-chapli-1kg": {
+      "id": "beef-chapli-1kg",
+      "menuItemId": "beef-chapli-1kg",
+      "fallback3d": "chapli",
+      "frames": 24,
+      "extension": "jpg",
+      "ready": false
+    },
+    "kabli-beef-pullao": {
+      "id": "kabli-beef-pullao",
+      "menuItemId": "kabli-beef-pullao",
+      "fallback3d": "pulao",
+      "frames": 24,
+      "extension": "jpg",
+      "ready": false
+    },
+    "full-platter": {
+      "id": "full-platter",
+      "menuItemId": "full-platter",
+      "fallback3d": "platter",
+      "frames": 24,
+      "extension": "jpg",
+      "ready": false
+    }
+  }
+}

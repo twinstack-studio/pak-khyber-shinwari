@@ -1,0 +1,210 @@
+{
+  "_readme": [
+    "The seating areas, and where they sit on the floor plan.",
+    "",
+    "IMPORTANT: every area below is marked \"confirmed\": false. The layout,",
+    "the names and the capacities are a sensible guess at how a Shinwari",
+    "restaurant on the GT Road is arranged — they are NOT measured from the",
+    "real building, because nobody has given us those numbers yet.",
+    "",
+    "The site shows a notice on the seating page while any area is",
+    "unconfirmed, so no customer is told something we have not checked.",
+    "",
+    "ASK THE CLIENT:",
+    "  - How many separate areas are there, and what does the staff call each?",
+    "  - How many people fit in each, and how many tables / charpai?",
+    "  - Which areas are family-only, and which are open seating?",
+    "  - Are cabins bookable in advance? Is there a minimum spend?",
+    "  - Is the outdoor majlis covered? Does it close in winter or rain?",
+    "  - Is there a separate area for large functions?",
+    "  - Parking: how many cars, and is it attended?",
+    "",
+    "Then set each area's real values and flip \"confirmed\" to true.",
+    "",
+    "The `plan` numbers are percentages of the floor-plan box, so an area can",
+    "be moved by editing two numbers rather than touching any code."
+  ],
+  "areas": [
+    {
+      "id": "majlis",
+      "confirmed": false,
+      "name": {
+        "en": "Open Majlis",
+        "ur": "کھلی مجلس"
+      },
+      "blurb": {
+        "en": "Charpai seating under the open sky, the way it is done back home. Best on a winter afternoon or a summer night.",
+        "ur": "کھلے آسمان تلے چارپائیوں پر نشست، بالکل جیسے گاؤں میں۔ سردیوں کی دوپہر اور گرمیوں کی رات کے لیے بہترین۔"
+      },
+      "seats": 60,
+      "units": {
+        "en": "charpai",
+        "ur": "چارپائیاں"
+      },
+      "unitCount": 15,
+      "photo": "courtyard",
+      "features": {
+        "en": [
+          "Open air",
+          "Charpai seating",
+          "Group friendly"
+        ],
+        "ur": [
+          "کھلی فضا",
+          "چارپائی نشست",
+          "بڑے گروپ کے لیے"
+        ]
+      },
+      "plan": {
+        "x": 6,
+        "y": 8,
+        "w": 42,
+        "h": 54
+      }
+    },
+    {
+      "id": "family-hall",
+      "confirmed": false,
+      "name": {
+        "en": "Family Hall",
+        "ur": "فیملی ہال"
+      },
+      "blurb": {
+        "en": "Indoor seating for families, warm in winter and cooled in summer. Tables of four that push together for a larger party.",
+        "ur": "خاندانوں کے لیے اندرونی نشست، سردیوں میں گرم اور گرمیوں میں ٹھنڈی۔ چار افراد کی میزیں جو ملا کر بڑی کی جا سکتی ہیں۔"
+      },
+      "seats": 80,
+      "units": {
+        "en": "tables",
+        "ur": "میزیں"
+      },
+      "unitCount": 20,
+      "photo": "hall",
+      "features": {
+        "en": [
+          "Air conditioned",
+          "Family only",
+          "Tables joinable"
+        ],
+        "ur": [
+          "ایئر کنڈیشنڈ",
+          "صرف فیملی",
+          "میزیں ملائی جا سکتی ہیں"
+        ]
+      },
+      "plan": {
+        "x": 52,
+        "y": 8,
+        "w": 42,
+        "h": 34
+      }
+    },
+    {
+      "id": "cabins",
+      "confirmed": false,
+      "name": {
+        "en": "Family Cabins",
+        "ur": "فیملی کیبنز"
+      },
+      "blurb": {
+        "en": "Curtained cabins for complete privacy — the usual choice for a family sitting down to a whole dum pukht lamb.",
+        "ur": "پردے والے کیبن، مکمل پردے کے ساتھ — عام طور پر وہ خاندان لیتے ہیں جو پورا دم پخت دنبہ منگواتے ہیں۔"
+      },
+      "seats": 48,
+      "units": {
+        "en": "cabins",
+        "ur": "کیبنز"
+      },
+      "unitCount": 8,
+      "photo": "cabin",
+      "features": {
+        "en": [
+          "Private",
+          "Curtained",
+          "Best for 6 or more"
+        ],
+        "ur": [
+          "پرائیویٹ",
+          "پردہ دار",
+          "چھ یا زیادہ افراد کے لیے"
+        ]
+      },
+      "plan": {
+        "x": 52,
+        "y": 46,
+        "w": 42,
+        "h": 16
+      }
+    },
+    {
+      "id": "tandoor",
+      "confirmed": false,
+      "name": {
+        "en": "The Tandoor & Grill",
+        "ur": "تندور اور گرل"
+      },
+      "blurb": {
+        "en": "The open kitchen. The karahi never leaves the flame and the naan comes straight off the tandoor wall — you can watch the whole thing.",
+        "ur": "کھلا باورچی خانہ۔ کڑاہی آگ سے نہیں اترتی اور نان سیدھا تندور سے آتا ہے — سب کچھ اپنی آنکھوں سے دیکھیں۔"
+      },
+      "seats": 0,
+      "units": {
+        "en": "open kitchen",
+        "ur": "کھلا باورچی خانہ"
+      },
+      "unitCount": 0,
+      "photo": "tandoor",
+      "features": {
+        "en": [
+          "Open kitchen",
+          "Watch the cooking"
+        ],
+        "ur": [
+          "کھلا باورچی خانہ",
+          "پکتا ہوا دیکھیں"
+        ]
+      },
+      "plan": {
+        "x": 6,
+        "y": 66,
+        "w": 88,
+        "h": 14
+      }
+    },
+    {
+      "id": "parking",
+      "confirmed": false,
+      "name": {
+        "en": "Parking",
+        "ur": "پارکنگ"
+      },
+      "blurb": {
+        "en": "Off-road parking right at the gate, so you are not stopping on the Grand Trunk Road.",
+        "ur": "گیٹ کے ساتھ ہی سڑک سے ہٹ کر پارکنگ، تاکہ جی ٹی روڈ پر رکنا نہ پڑے۔"
+      },
+      "seats": 0,
+      "units": {
+        "en": "cars",
+        "ur": "گاڑیاں"
+      },
+      "unitCount": 40,
+      "photo": "parking",
+      "features": {
+        "en": [
+          "Off the highway",
+          "At the gate"
+        ],
+        "ur": [
+          "شاہراہ سے ہٹ کر",
+          "گیٹ کے ساتھ"
+        ]
+      },
+      "plan": {
+        "x": 6,
+        "y": 84,
+        "w": 88,
+        "h": 10
+      }
+    }
+  ]
+}

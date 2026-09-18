@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0",
+  "currency": "PKR",
+
+  "restaurant": {
+    "name": { "en": "Pak Khyber Shinwari", "ur": "پاک خیبر شنواری" },
+    "short_name": "PKS",
+    "brand_note": "Spelling confirmed by client: 'Shinwari' (not 'Shenwari' as printed on the old logo). Use 'Shinwari' everywhere including the redrawn SVG logo.",
+    "branch": { "en": "Margalla, GT Road", "ur": "مرگلہ، جی ٹی روڈ" },
+    "address": {
+      "en": "GT Road, Sangjani, Islamabad (near Multi Gardens B-17 / Nicholson Monument)",
+      "ur": "جی ٹی روڈ، سنگجانی، اسلام آباد"
+    },
+    "phone": "+92 315 3043333",
+    "email": "pakkhybershinwari@gmail.com",
+    "social": {
+      "facebook": "Pak Khyber Shinwari",
+      "instagram": "Pak Khyber Shinwari",
+      "youtube": "Pak Khyber Shinwari",
+      "tiktok": "Pak Khyber Shinwari",
+      "whatsapp": "Pak Khyber Shinwari"
+    },
+    "notes": {
+      "en": "Parcel / takeaway facility available",
+      "ur": "پارسل کی سہولت بھی موجود ہے"
+    }
+  },
+
+  "tax": {
+    "authority": "FBR",
+    "card_payment_percent": 5,
+    "cash_payment_percent": 16,
+    "notice": {
+      "en": "5% tax on card payment, 16% tax on cash payment",
+      "ur": "کارڈ پیمنٹ پر 5% اور کیش پیمنٹ پر 16% ٹیکس لاگو ہوگا"
+    }
+  },
+
+  "packaging": {
+    "disposable_box": [
+      { "size": "S", "price": 50 },
+      { "size": "M", "price": 80 },
+      { "size": "L", "price": 100 }
+    ]
+  },
+
+  "categories": [
+    {
+      "id": "platters",
+      "name": { "en": "Platters & Deals", "ur": "پلیٹر ڈیلز" },
+      "featured": true,
+      "items": [
+        {
+          "id": "full-platter",
+          "name": { "en": "Full Platter", "ur": "فل پلیٹر" },
+          "price": 8000,
+          "includes": {
+            "en": ["Kabuli Pulao 3 plates", "Malai Boti Seekh 2", "Chicken Tikka Seekh 2", "Beef Tikka Kabab Danda 2", "Chicken Seekh Kabab 2", "Achari Boti 2", "Finger Fish 2", "Naan 6"],
+            "ur": ["کابلی پلاؤ 3 پلیٹ", "ملائی بوٹی سیخ 2", "چکن تکہ سیخ 2", "تکہ کباب بیف ڈنڈا 2", "سیخ کباب چکن 2", "اچاری بوٹی 2", "فنگر فش 2", "نان 6 عدد"]
+          }
+        },
+        {
+          "id": "half-platter",
+          "name": { "en": "Half Platter", "ur": "ہاف پلیٹر" },
+          "price": 4500,
+          "includes": {
+            "en": ["Kabuli Pulao 1.5 plates", "Malai Boti Seekh 1", "Chicken Tikka Seekh 1", "Beef Seekh Kabab Danda 1", "Chicken Seekh Kabab Danda 1", "Finger Fish 1", "Naan 3"],
+            "ur": ["کابلی پلاؤ 1.5 پلیٹ", "ملائی بوٹی سیخ 1", "چکن تکہ سیخ 1", "سیخ کباب بیف ڈنڈا 1", "سیخ کباب چکن ڈنڈا 1", "فنگر فش 1", "نان 3 عدد"]
+          }
+        },
+        {
+          "id": "full-dum-pukht-lamb",
+          "name": { "en": "Full Dum Pukht — Full Lamb (10 Kg)", "ur": "فل دم پخت (10 کلو)" },
+          "price": 42500,
+          "signature": true
+        }
+      ]
+    },
+
+    {
+      "id": "bbq-platter",
+      "name": { "en": "BBQ Platter", "ur": "بی بی کیو" },
+      "items": [
+        { "id": "finger-fish-1kg", "name": { "en": "Finger Fish", "ur": "فنگر فش" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4000 },
+        { "id": "finger-fish-half", "name": { "en": "Finger Fish", "ur": "فنگر فش" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2000 },
+        { "id": "trout-grilled-1kg", "name": { "en": "Trout Grilled Fish", "ur": "ٹراؤٹ گرل فش" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 3950 },
+        { "id": "trout-grilled-half", "name": { "en": "Trout Grilled Fish", "ur": "ٹراؤٹ گرل فش" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2000 },
+        { "id": "kala-raho-1kg", "name": { "en": "Kala Raho Grilled Fish", "ur": "کالا راہو گرل فش" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "kala-raho-half", "name": { "en": "Kala Raho Grilled Fish", "ur": "کالا راہو گرل فش" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1100 },
+        { "id": "beef-seekh-12", "name": { "en": "Beef Seekh Kabab", "ur": "بیف سیخ کباب" }, "variant": { "en": "12 Pieces", "ur": "12 عدد" }, "price": 1920 },
+        { "id": "beef-seekh-06", "name": { "en": "Beef Seekh Kabab", "ur": "بیف سیخ کباب" }, "variant": { "en": "06 Pieces", "ur": "06 عدد" }, "price": 960 },
+        { "id": "chicken-seekh-12", "name": { "en": "Chicken Seekh Kabab", "ur": "چکن سیخ کباب" }, "variant": { "en": "12 Pieces", "ur": "12 عدد" }, "price": 1920 },
+        { "id": "chicken-seekh-06", "name": { "en": "Chicken Seekh Kabab", "ur": "چکن سیخ کباب" }, "variant": { "en": "06 Pieces", "ur": "06 عدد" }, "price": 960 },
+        { "id": "bbq-chicken-angara-1kg", "name": { "en": "Chicken Angara", "ur": "چکن انگارہ" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "bbq-chicken-angara-half", "name": { "en": "Chicken Angara", "ur": "چکن انگارہ" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1250 },
+        { "id": "chicken-boti", "name": { "en": "Chicken Boti", "ur": "چکن بوٹی" }, "variant": { "en": "1 Seekh", "ur": "1 سیخ" }, "price": 560 },
+        { "id": "malai-boti", "name": { "en": "Malai Boti", "ur": "ملائی بوٹی" }, "variant": { "en": "1 Seekh", "ur": "1 سیخ" }, "price": 600 },
+        { "id": "chicken-achari-boti", "name": { "en": "Chicken Achari Boti", "ur": "چکن اچاری بوٹی" }, "variant": { "en": "1 Seekh", "ur": "1 سیخ" }, "price": 600 },
+        { "id": "chicken-tikka", "name": { "en": "Chicken Tikka", "ur": "چکن تکہ" }, "variant": { "en": "1 Piece", "ur": "ایک پیس" }, "price": 450 },
+        { "id": "seekh-quail", "name": { "en": "Seekh Quail", "ur": "سیخ بٹیر" }, "variant": { "en": "Per Piece", "ur": "فی عدد" }, "price": 200 },
+        { "id": "drumstick", "name": { "en": "Drumstick", "ur": "ڈرم اسٹک" }, "variant": { "en": "1 Seekh", "ur": "فی عدد" }, "price": 200 }
+      ]
+    },
+
+    {
+      "id": "dum-pukht",
+      "name": { "en": "Dum Pukht", "ur": "دم پخت" },
+      "featured": true,
+      "note": { "en": "A rare taste you can't find anywhere", "ur": "ایسا ذائقہ جو کہیں اور نہیں ملے گا" },
+      "items": [
+        { "id": "ran-sajji", "name": { "en": "Ran Sajji", "ur": "ران سجی" }, "variant": { "en": "Per Kg, without rice", "ur": "فی کلو، بغیر چاول" }, "price": 4250, "signature": true },
+        { "id": "khara-karahi-1kg", "name": { "en": "Khara Karahi", "ur": "کھڑا کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4500 },
+        { "id": "khara-karahi-half", "name": { "en": "Khara Karahi", "ur": "کھڑا کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2480 },
+        { "id": "special-white-karahi-1kg", "name": { "en": "Special White Karahi", "ur": "اسپیشل وائٹ کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4500 },
+        { "id": "special-white-karahi-half", "name": { "en": "Special White Karahi", "ur": "اسپیشل وائٹ کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2480 },
+        { "id": "lamb-karahi-1kg", "name": { "en": "Lamb Karahi", "ur": "دنبہ کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4250 },
+        { "id": "lamb-karahi-half", "name": { "en": "Lamb Karahi", "ur": "دنبہ کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2250 },
+        { "id": "sulemani-lamb-karahi-1kg", "name": { "en": "Sulemani Lamb Karahi", "ur": "سلیمانی کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4250 },
+        { "id": "sulemani-lamb-karahi-half", "name": { "en": "Sulemani Lamb Karahi", "ur": "سلیمانی کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2250 },
+        { "id": "lamb-tikka-1kg", "name": { "en": "Lamb Tikka", "ur": "دنبہ تکہ" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 4250 },
+        { "id": "lamb-tikka-half", "name": { "en": "Lamb Tikka", "ur": "دنبہ تکہ" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 2250 }
+      ]
+    },
+
+    {
+      "id": "chicken-shinwari",
+      "name": { "en": "Chicken Shinwari", "ur": "چکن شنواری" },
+      "items": [
+        { "id": "chicken-white-karahi-1kg", "name": { "en": "Chicken White Karahi", "ur": "چکن وائٹ کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2500 },
+        { "id": "chicken-white-karahi-half", "name": { "en": "Chicken White Karahi", "ur": "چکن وائٹ کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1300 },
+        { "id": "chicken-karahi-1kg", "name": { "en": "Chicken Karahi", "ur": "چکن کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "chicken-karahi-half", "name": { "en": "Chicken Karahi", "ur": "چکن کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1250 },
+        { "id": "chicken-sulemani-karahi-1kg", "name": { "en": "Chicken Sulemani Karahi", "ur": "چکن سلیمانی کڑاہی" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200, "signature": true },
+        { "id": "chicken-sulemani-karahi-half", "name": { "en": "Chicken Sulemani Karahi", "ur": "چکن سلیمانی کڑاہی" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1250 },
+        { "id": "chicken-namkeen-tikka-1kg", "name": { "en": "Chicken Namkeen Tikka", "ur": "چکن نمکین تکہ" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "chicken-namkeen-tikka-half", "name": { "en": "Chicken Namkeen Tikka", "ur": "چکن نمکین تکہ" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1250 },
+        { "id": "chicken-angara-1kg", "name": { "en": "Chicken Angara", "ur": "چکن انگارہ" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "chicken-angara-half", "name": { "en": "Chicken Angara", "ur": "چکن انگارہ" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1250 }
+      ]
+    },
+
+    {
+      "id": "chapli-kabab",
+      "name": { "en": "Chicken & Beef Chapli Kabab", "ur": "چکن اینڈ بیف چپلی کباب" },
+      "per_piece": [
+        { "label": { "en": "Chapli Kabab (large)", "ur": "چپلی کباب (بڑا)" }, "price": 400, "needs_verification": "per-piece labels on card not fully legible" },
+        { "label": { "en": "Chapli Kabab (small)", "ur": "چپلی کباب (چھوٹا)" }, "price": 200, "needs_verification": "per-piece labels on card not fully legible" }
+      ],
+      "items": [
+        { "id": "finger-fish-chapli-1kg", "name": { "en": "Finger Fish Chapli Kabab", "ur": "فنگر فش چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 3000 },
+        { "id": "finger-fish-chapli-half", "name": { "en": "Finger Fish Chapli Kabab", "ur": "فنگر فش چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1600 },
+        { "id": "beef-chaki-chapli-1kg", "name": { "en": "Beef Chaki Chapli Kabab", "ur": "بیف چکی چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 2200 },
+        { "id": "beef-chaki-chapli-half", "name": { "en": "Beef Chaki Chapli Kabab", "ur": "بیف چکی چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 1200 },
+        { "id": "beef-chapli-1kg", "name": { "en": "Beef Chapli Kabab", "ur": "بیف چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 1600, "signature": true },
+        { "id": "beef-chapli-half", "name": { "en": "Beef Chapli Kabab", "ur": "بیف چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 800 },
+        { "id": "beef-egg-chapli-1kg", "name": { "en": "Beef & Egg Chapli Kabab", "ur": "بیف اینڈ ایگ چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 1900 },
+        { "id": "beef-egg-chapli-half", "name": { "en": "Beef & Egg Chapli Kabab", "ur": "بیف اینڈ ایگ چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 950 },
+        { "id": "beef-chicken-mix-chapli-1kg", "name": { "en": "Beef Chicken Mix Chapli Kabab", "ur": "بیف چکن مکس چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 1600 },
+        { "id": "beef-chicken-mix-chapli-half", "name": { "en": "Beef Chicken Mix Chapli Kabab", "ur": "بیف چکن مکس چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 850 },
+        { "id": "chicken-chapli-1kg", "name": { "en": "Chicken Chapli Kabab", "ur": "چکن چپلی کباب" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 1600 },
+        { "id": "chicken-chapli-half", "name": { "en": "Chicken Chapli Kabab", "ur": "چکن چپلی کباب" }, "variant": { "en": "Half", "ur": "ہاف" }, "price": 800 }
+      ]
+    },
+
+    {
+      "id": "ready-to-serve",
+      "name": { "en": "Ready to Serve", "ur": "ریڈی ٹو سرو" },
+      "items": [
+        { "id": "dum-pukht-roast", "name": { "en": "Dum Pukht Roast", "ur": "دم پخت روسٹ" }, "variant": { "en": "Per Plate", "ur": "فی پلیٹ" }, "price": 1400 },
+        { "id": "kabli-beef-pullao", "name": { "en": "Kabli Beef Pullao", "ur": "کابلی بیف پلاؤ" }, "variant": { "en": "Per Plate", "ur": "فی پلیٹ" }, "price": 1000, "signature": true },
+        { "id": "kabli-chicken-pullao", "name": { "en": "Kabli Chicken Pullao", "ur": "کابلی چکن پلاؤ" }, "variant": { "en": "Per Plate", "ur": "فی پلیٹ" }, "price": 1000, "signature": true },
+        { "id": "lamb-mutton-korma", "name": { "en": "Lamb Mutton Korma", "ur": "مٹن قورمہ" }, "price": 1200 },
+        { "id": "lamb-lubnani-qorma", "name": { "en": "Lamb Lubnani Qorma", "ur": "لبنانی قورمہ" }, "price": 1250 },
+        { "id": "lamb-mutton-keema", "name": { "en": "Lamb Mutton Keema", "ur": "مٹن قیمہ" }, "price": 760 },
+        { "id": "lamb-mutton-kaleji", "name": { "en": "Lamb Mutton Kaleji", "ur": "مٹن کلیجی" }, "price": 500 },
+        { "id": "special-dal", "name": { "en": "Special Dal", "ur": "اسپیشل دال" }, "price": 600 },
+        { "id": "dall-mash", "name": { "en": "Dall Mash", "ur": "دال ماش" }, "price": 430 },
+        { "id": "mix-vegetable", "name": { "en": "Mix Vegetable", "ur": "مکس سبزی" }, "price": 400 }
+      ]
+    },
+
+    {
+      "id": "breakfast",
+      "name": { "en": "Breakfast", "ur": "ناشتہ" },
+      "items": [
+        { "id": "twaw-paratha", "name": { "en": "Twaw Paratha", "ur": "توا پراٹھا" }, "price": 150 },
+        { "id": "cheese-paratha", "name": { "en": "Cheese Paratha", "ur": "چیز پراٹھا" }, "price": 200 },
+        { "id": "tandoori-paratha-desi-ghee", "name": { "en": "Tandoori Paratha (Desi Ghee)", "ur": "تندوری دیسی گھی پراٹھا" }, "price": 150 },
+        { "id": "tandoori-paratha", "name": { "en": "Tandoori Paratha", "ur": "تندوری پراٹھا" }, "price": 100 },
+        { "id": "halwa-puri", "name": { "en": "Halwa Puri / Nashta", "ur": "حلوہ پوری / ناشتہ" }, "price": 400 },
+        { "id": "mutton-paye", "name": { "en": "Mutton Paye", "ur": "بڑے پائے" }, "variant": { "en": "Each", "ur": "فی عدد" }, "price": 700 },
+        { "id": "maghaz", "name": { "en": "Maghaz", "ur": "مغز" }, "variant": { "en": "Per Plate", "ur": "فی پلیٹ" }, "price": 500 },
+        { "id": "mutton-kelaji", "name": { "en": "Mutton Kelaji", "ur": "مٹن کلیجی" }, "price": 500 },
+        { "id": "pota-kelaji", "name": { "en": "Pota Kelaji", "ur": "پوٹا کلیجی" }, "price": 400 },
+        { "id": "chany", "name": { "en": "Chany", "ur": "چنے" }, "variant": { "en": "Plate", "ur": "پلیٹ" }, "price": 400 },
+        { "id": "fry-egg", "name": { "en": "Fry Egg", "ur": "انڈہ فرائی" }, "price": 80 },
+        { "id": "omelette", "name": { "en": "Omelette", "ur": "آملیٹ" }, "price": 150 },
+        { "id": "yogurt", "name": { "en": "Yogurt", "ur": "دہی" }, "price": 150 },
+        { "id": "lassi-glass-breakfast", "name": { "en": "Lassi Glass", "ur": "لسی گلاس" }, "price": 250 },
+        { "id": "special-tea-breakfast", "name": { "en": "Special Tea", "ur": "اسپیشل چائے" }, "price": 160 }
+      ]
+    },
+
+    {
+      "id": "juice-shake",
+      "name": { "en": "Juice, Shakes & Desserts", "ur": "جوس، شیک اور میٹھا" },
+      "items": [
+        { "id": "gajar-halwa-1kg", "name": { "en": "Gajar Halwa", "ur": "گاجر حلوہ" }, "variant": { "en": "1 Kg", "ur": "1 کلو" }, "price": 1580 },
+        { "id": "gajar-halwa-plate", "name": { "en": "Gajar Halwa", "ur": "گاجر حلوہ" }, "variant": { "en": "Plate", "ur": "پلیٹ" }, "price": 200 },
+        { "id": "gulab-jamun", "name": { "en": "Hot Gulab Jamun", "ur": "گرم گلاب جامن" }, "price": 180 },
+        { "id": "soup-bowl", "name": { "en": "Soup Bowl", "ur": "سوپ پیالہ" }, "price": 250 },
+        { "id": "mango-milkshake", "name": { "en": "Mango Milkshake", "ur": "آم ملک شیک" }, "price": 350 },
+        { "id": "banana-milkshake", "name": { "en": "Banana Milkshake", "ur": "کیلا ملک شیک" }, "price": 350 },
+        { "id": "apple-milkshake", "name": { "en": "Apple Milkshake", "ur": "سیب ملک شیک" }, "price": 350 },
+        { "id": "peach-milkshake", "name": { "en": "Peach Milkshake", "ur": "آڑو ملک شیک" }, "price": 350 },
+        { "id": "lemon-soda", "name": { "en": "Lemon Soda", "ur": "لیمن سوڈا" }, "price": 300 },
+        { "id": "mint-lemon", "name": { "en": "Mint Lemon", "ur": "منٹ لیمن" }, "price": 300 },
+        { "id": "mint-margarita", "name": { "en": "Mint Margarita", "ur": "منٹ مارگریٹا" }, "price": 300 },
+        { "id": "blueberry", "name": { "en": "Blueberry", "ur": "بلیو بیری" }, "price": 300 }
+      ]
+    },
+
+    {
+      "id": "qahwa-dry-fruit",
+      "name": { "en": "Qahwa & Dry Fruit", "ur": "قہوہ اور خشک میوہ جات" },
+      "items": [
+        { "id": "zafrani-qahwa-thermos", "name": { "en": "Zafrani Qahwa Thermos", "ur": "زعفرانی قہوہ تھرمس" }, "price": 800 },
+        { "id": "qahwa-thermos", "name": { "en": "Qahwa Thermos", "ur": "قہوہ تھرمس" }, "price": 400 },
+        { "id": "qahwa", "name": { "en": "Qahwa", "ur": "قہوہ کپ" }, "price": 50 },
+        { "id": "special-tea", "name": { "en": "Special Tea", "ur": "اسپیشل چائے" }, "price": 160 },
+        { "id": "fruit-cake", "name": { "en": "Fruit Cake", "ur": "فروٹ کیک" }, "price": 200 },
+        { "id": "special-nan-khatai", "name": { "en": "Special Nan Khatai", "ur": "نان خطائی" }, "price": 50 },
+        { "id": "gur-revry", "name": { "en": "Gur Revry", "ur": "گڑ ریوڑی" }, "variant": { "en": "Plate", "ur": "پلیٹ" }, "price": 100 },
+        { "id": "dry-fruit-plate-1", "name": { "en": "Dry Fruit Plate", "ur": "ڈرائی فروٹ پلیٹ" }, "variant": { "en": "Small", "ur": "چھوٹی" }, "price": 500, "needs_verification": "size label on card not legible" },
+        { "id": "dry-fruit-plate-2", "name": { "en": "Dry Fruit Plate", "ur": "ڈرائی فروٹ پلیٹ" }, "variant": { "en": "Medium", "ur": "درمیانی" }, "price": 1000, "needs_verification": "size label on card not legible" },
+        { "id": "dry-fruit-plate-3", "name": { "en": "Dry Fruit Plate", "ur": "ڈرائی فروٹ پلیٹ" }, "variant": { "en": "Large", "ur": "بڑی" }, "price": 1500, "needs_verification": "size label on card not legible" }
+      ]
+    },
+
+    {
+      "id": "drinks",
+      "name": { "en": "Drinks", "ur": "مشروبات" },
+      "items": [
+        { "id": "mineral-water-large", "name": { "en": "Mineral Water", "ur": "منرل واٹر" }, "variant": { "en": "Large", "ur": "لارج" }, "price": 150 },
+        { "id": "mineral-water-small", "name": { "en": "Mineral Water", "ur": "منرل واٹر" }, "variant": { "en": "Small", "ur": "اسمال" }, "price": 60 },
+        { "id": "cold-drink-1500", "name": { "en": "Cold Drink 1.5 Ltr", "ur": "1.5 لیٹر کولڈ ڈرنک" }, "price": 230 },
+        { "id": "lassi", "name": { "en": "Lassi", "ur": "لسی گلاس" }, "price": 250 },
+        { "id": "lemon-malt", "name": { "en": "Lemon Malt", "ur": "لیمن مالٹ" }, "price": 120 },
+        { "id": "mango-juice", "name": { "en": "Mango Juice", "ur": "مینگو جوس" }, "price": 120 },
+        { "id": "booster-drink", "name": { "en": "Booster Drink", "ur": "بوسٹر ڈرنک" }, "price": 120 },
+        { "id": "regular-drink", "name": { "en": "Regular Drink", "ur": "ریگولر ڈرنک" }, "price": 70 }
+      ]
+    },
+
+    {
+      "id": "breads-sides",
+      "name": { "en": "Breads & Sides", "ur": "روٹی اور سلاد" },
+      "source_note": "Printed on the Drinks page of the menu card",
+      "items": [
+        { "id": "salad", "name": { "en": "Salad", "ur": "سلاد" }, "price": 220 },
+        { "id": "raita", "name": { "en": "Raita", "ur": "رائتہ" }, "price": 190 },
+        { "id": "special-afghani-naan", "name": { "en": "Special Afghani Naan", "ur": "اسپیشل افغانی نان" }, "price": 150 },
+        { "id": "afghani-naan", "name": { "en": "Afghani Naan", "ur": "افغانی نان" }, "price": 60 },
+        { "id": "double-patiri-roti", "name": { "en": "Double Patiri Roti", "ur": "ڈبل پتیری روٹی" }, "price": 80 },
+        { "id": "roti", "name": { "en": "Roti", "ur": "روٹی" }, "price": 40 },
+        { "id": "chapati", "name": { "en": "Chapati", "ur": "چپاتی" }, "price": 50 }
+      ]
+    }
+  ]
+}

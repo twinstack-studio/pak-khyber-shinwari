@@ -1,0 +1,73 @@
+{
+  "_readme": [
+    "Facts about the business that only PKS can supply.",
+    "",
+    "Everything with \"provided\": false is a real-world fact nobody should",
+    "invent — an owner's name, the year the doors opened, a family history, an",
+    "award. Those sections stay hidden on the site until the client fills them",
+    "in, so the About page is never wrong; it is only ever incomplete.",
+    "",
+    "TO FILL ONE IN: replace the empty values, set \"provided\" to true, and the",
+    "section appears. The Urdu field can be left empty and the English will be",
+    "shown in both locales until a translation exists.",
+    "",
+    "QUESTIONS TO ASK THE CLIENT:",
+    "  - Owner's / founder's full name, and what they would like to be called",
+    "  - What year did this branch open? Was there an earlier branch?",
+    "  - Who cooks? Is there a head chef worth naming?",
+    "  - Where is the family originally from in Khyber?",
+    "  - Any story behind starting the restaurant?",
+    "  - Any awards, press, or notable visits?",
+    "  - Number of halls, cabins and outdoor charpai, with seating capacity",
+    "  - Exact opening and closing times, and any different Friday/Ramzan hours"
+  ],
+
+  "owner": {
+    "provided": false,
+    "name": { "en": "", "ur": "" },
+    "role": { "en": "", "ur": "" },
+    "quote": { "en": "", "ur": "" },
+    "photo": ""
+  },
+
+  "founded": {
+    "provided": false,
+    "year": null,
+    "note": { "en": "", "ur": "" }
+  },
+
+  "headChef": {
+    "provided": false,
+    "name": { "en": "", "ur": "" },
+    "note": { "en": "", "ur": "" }
+  },
+
+  "origin": {
+    "provided": false,
+    "place": { "en": "", "ur": "" },
+    "note": { "en": "", "ur": "" }
+  },
+
+  "milestones": {
+    "provided": false,
+    "items": []
+  },
+
+  "press": {
+    "provided": false,
+    "items": []
+  },
+
+  "seating": {
+    "provided": false,
+    "note": "Needed for the Seating page too — halls, cabins, outdoor charpai, and capacity for each.",
+    "areas": []
+  },
+
+  "hours": {
+    "provided": false,
+    "weekday": { "open": "", "close": "" },
+    "friday": { "open": "", "close": "" },
+    "ramzan": { "note": { "en": "", "ur": "" } }
+  }
+}

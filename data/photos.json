@@ -1,0 +1,306 @@
+{
+  "_readme": [
+    "Photography used across the site.",
+    "",
+    "LICENSING: every URL here is from Unsplash, whose licence allows free",
+    "commercial use without attribution. They are NOT taken from Google image",
+    "results — most of those are copyrighted (other restaurants, food bloggers,",
+    "stock agencies) and putting them on a paying client's website invites a",
+    "takedown or a claim against the client.",
+    "",
+    "THESE ARE STAND-INS. They show the right kind of dish, not PKS's own food.",
+    "Before the site goes public the client should either approve them as",
+    "stand-ins or replace them with real photographs of their kitchen.",
+    "",
+    "TO REPLACE ONE: change the `url` to a local path like /photos/food/karahi.jpg",
+    "and drop the file in public/photos/food/. Nothing else needs to change.",
+    "",
+    "The `credit` field is not required by the licence but is good manners and",
+    "makes it obvious later which images are still stand-ins."
+  ],
+  "defaults": {
+    "params": "?auto=format&fit=crop&q=80",
+    "note": "Widths are appended per usage: &w=1920 for hero, &w=1200 for cards."
+  },
+  "dishes": {
+    "full-platter": {
+      "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1",
+      "alt": {
+        "en": "Grilled meat and vegetables laid out on a platter",
+        "ur": "پلیٹر میں سجا ہوا گرل گوشت اور سبزیاں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "ran-sajji": {
+      "url": "https://images.unsplash.com/photo-1532636875304-0c89119d9b4d",
+      "alt": {
+        "en": "Whole roasted leg of meat",
+        "ur": "بھنی ہوئی ران"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "chicken-sulemani-karahi-1kg": {
+      "url": "https://images.unsplash.com/photo-1694579740719-0e601c5d2437",
+      "alt": {
+        "en": "Meat and vegetables cooking in an iron pan",
+        "ur": "لوہے کی کڑاہی میں پکتا گوشت اور سبزیاں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "beef-chapli-1kg": {
+      "url": "https://images.unsplash.com/photo-1595777216528-071e0127ccbf",
+      "alt": {
+        "en": "Spiced meat patties on a plate",
+        "ur": "پلیٹ میں مصالحے دار کباب"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "kabli-beef-pullao": {
+      "url": "https://images.unsplash.com/photo-1633945274309-2c16c9682a8c",
+      "alt": {
+        "en": "Rice served with meat on a white plate",
+        "ur": "سفید پلیٹ میں چاول اور گوشت"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    }
+  },
+  "categories": {
+    "bbq-platter": {
+      "url": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0",
+      "alt": {
+        "en": "Meat grilling over charcoal",
+        "ur": "کوئلوں پر بھنتا گوشت"
+      },
+      "placeholder": true
+    },
+    "dum-pukht": {
+      "url": "https://images.unsplash.com/photo-1654605137918-db9d2df8bf57",
+      "alt": {
+        "en": "A large cut of meat cooking slowly",
+        "ur": "دھیمی آنچ پر پکتا بڑا گوشت"
+      },
+      "placeholder": true
+    },
+    "chicken-shinwari": {
+      "url": "https://images.unsplash.com/photo-1777613112871-a1d4920a942f",
+      "alt": {
+        "en": "Spiced curry in clay pots",
+        "ur": "مٹی کے برتنوں میں سالن"
+      },
+      "placeholder": true
+    },
+    "chapli-kabab": {
+      "url": "https://images.unsplash.com/photo-1633436375795-12b3b339712f",
+      "alt": {
+        "en": "Meat and vegetables plated together",
+        "ur": "پلیٹ میں گوشت اور سبزیاں"
+      },
+      "placeholder": true
+    },
+    "ready-to-serve": {
+      "url": "https://images.unsplash.com/photo-1716550781939-beb7d7247aae",
+      "alt": {
+        "en": "Rice and meat on a white plate",
+        "ur": "سفید پلیٹ میں چاول اور گوشت"
+      },
+      "placeholder": true
+    },
+    "breakfast": {
+      "url": "https://images.unsplash.com/photo-1697155406014-04dc649b0953",
+      "alt": {
+        "en": "Flatbread served in a bowl",
+        "ur": "پیالے میں روٹی"
+      },
+      "placeholder": true
+    },
+    "breads-sides": {
+      "url": "https://images.unsplash.com/photo-1583057341912-a0df64b8da4d",
+      "alt": {
+        "en": "Fresh bread in a woven basket",
+        "ur": "ٹوکری میں تازہ روٹی"
+      },
+      "placeholder": true
+    },
+    "juice-shake": {
+      "url": "https://images.unsplash.com/photo-1630851840633-f96999247032",
+      "alt": {
+        "en": "A bowl garnished with fresh leaves",
+        "ur": "تازہ پتوں سے سجا پیالہ"
+      },
+      "placeholder": true
+    },
+    "qahwa-dry-fruit": {
+      "url": "https://images.unsplash.com/photo-1649175228665-52621e214126",
+      "alt": {
+        "en": "A jar of almonds on a table",
+        "ur": "میز پر بادام کا مرتبان"
+      },
+      "placeholder": true
+    },
+    "drinks": {
+      "url": "https://images.unsplash.com/photo-1642821373181-696a54913e93",
+      "alt": {
+        "en": "A bowl of rice beside a bowl of yoghurt",
+        "ur": "چاول اور دہی کے پیالے"
+      },
+      "placeholder": true
+    },
+    "platters": {
+      "url": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
+      "alt": {
+        "en": "Grilled skewers served with bread and salad",
+        "ur": "سیخ کباب، روٹی اور سلاد"
+      },
+      "placeholder": true
+    }
+  },
+  "scenes": {
+    "menuHero": {
+      "url": "https://images.unsplash.com/photo-1771285119318-b342c3ecc51c",
+      "alt": {
+        "en": "A large platter of assorted grilled meats and vegetables",
+        "ur": "بڑے پلیٹر میں مختلف اقسام کا گرل گوشت اور سبزیاں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "menuPlate": {
+      "url": "https://images.unsplash.com/photo-1766589152485-9aafd9812a19",
+      "alt": {
+        "en": "Grilled lamb chops on a platter",
+        "ur": "پلیٹر میں گرل کی ہوئی دنبے کی چانپیں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1777994505601-fe18ab41f8f0",
+      "alt": {
+        "en": "Grilled meat and vegetables served over flatbread",
+        "ur": "روٹی پر سجا گرل گوشت اور سبزیاں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "flames": {
+      "url": "https://images.unsplash.com/photo-1588182657969-777d766e31ab",
+      "alt": {
+        "en": "Flames over a black charcoal grill",
+        "ur": "کوئلوں پر بھڑکتے شعلے"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "feast": {
+      "url": "https://images.unsplash.com/photo-1571162242324-f1607b1eceaa",
+      "alt": {
+        "en": "A spread of cooked meat and side dishes on a wooden table",
+        "ur": "لکڑی کی میز پر گوشت اور لوازمات"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "courtyard": {
+      "url": "https://images.unsplash.com/photo-1778102779733-eb4b29d82898",
+      "alt": {
+        "en": "A courtyard with trees and lights at night",
+        "ur": "رات کے وقت درختوں اور روشنیوں والا صحن"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "hall": {
+      "url": "https://images.unsplash.com/photo-1652195960911-c9f55224bd89",
+      "alt": {
+        "en": "A large dining hall with tables and chairs",
+        "ur": "میزوں اور کرسیوں والا بڑا ہال"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "cabin": {
+      "url": "https://images.unsplash.com/photo-1608816042754-d69cb2271bea",
+      "alt": {
+        "en": "A quiet wooden table set for a small party",
+        "ur": "چھوٹی محفل کے لیے لگی لکڑی کی میز"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "tandoor": {
+      "url": "https://images.unsplash.com/photo-1763951718950-c536b1295213",
+      "alt": {
+        "en": "A baker pressing flatbread onto the wall of a tandoor",
+        "ur": "تندور میں روٹی لگاتا نانبائی"
+      },
+      "placeholder": true
+    },
+    "interior": {
+      "url": "https://images.unsplash.com/photo-1713195959066-8698d2aa817e",
+      "alt": {
+        "en": "A restaurant with tables, chairs and a brick wall",
+        "ur": "میزوں، کرسیوں اور اینٹوں کی دیوار والا ریسٹورنٹ"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "grill": {
+      "url": "https://images.unsplash.com/photo-1684864115205-242c064363e6",
+      "alt": {
+        "en": "A cook working a large cut of meat over the grill",
+        "ur": "گرل پر گوشت بھونتا باورچی"
+      },
+      "placeholder": true
+    },
+    "spread": {
+      "url": "https://images.unsplash.com/photo-1633945274405-b6c8069047b0",
+      "alt": {
+        "en": "A full spread of dishes laid on a red cloth",
+        "ur": "سرخ دسترخوان پر سجا کھانا"
+      },
+      "placeholder": true
+    },
+    "parking": {
+      "url": "https://images.unsplash.com/photo-1737417912846-bc8eb14c5701",
+      "alt": {
+        "en": "A restaurant with cars parked in front of it",
+        "ur": "ریسٹورنٹ کے سامنے کھڑی گاڑیاں"
+      },
+      "credit": "Unsplash",
+      "placeholder": true
+    },
+    "exterior": {
+      "url": "/photos/venue/pks-exterior-night.jpg",
+      "alt": {
+        "en": "Pak Khyber Shinwari at night, lit signage over the open courtyard on the GT Road",
+        "ur": "رات کے وقت پاک خیبر شنواری، جی ٹی روڈ پر روشن سائن بورڈ اور کھلا صحن"
+      },
+      "credit": "Pak Khyber Shinwari",
+      "placeholder": false
+    },
+    "charpai": {
+      "url": "/photos/venue/pks-charpai-hall.jpg",
+      "alt": {
+        "en": "Charpai seating under a lit hall, rows of low tables and bolsters",
+        "ur": "روشن ہال میں چارپائیوں کی قطاریں، نیچی میزیں اور گاؤ تکیے"
+      },
+      "credit": "Supplied by the client",
+      "placeholder": false
+    },
+    "outdoor": {
+      "url": "/photos/venue/pks-outdoor-sitting.jpg",
+      "alt": {
+        "en": "The outdoor majlis at night, charpai tables full of guests under strings of lights",
+        "ur": "رات کو کھلی مجلس، روشنیوں تلے چارپائیوں پر بیٹھے مہمان"
+      },
+      "credit": "Pak Khyber Shinwari",
+      "placeholder": false,
+      "note": "Client's own photo. The PKS logo and the 'Outdoor Sitting' caption were cropped off rather than painted over — at 335px wide any interpolation would have smeared visibly. Only 334x418 remains; ask the client for the full-size original."
+    }
+  }
+}

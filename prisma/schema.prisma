@@ -1,0 +1,149 @@
+// Pak Khyber Shinwari — data model
+//
+// PostgreSQL, on Vercel and locally.
+//
+// This ran on SQLite while the order flow was being built, but a file-based
+// database cannot be deployed: Vercel's filesystem is read-only and thrown
+// away between requests, so every write — an order, a review, a staff login
+// — would fail. DATABASE_URL points at a Postgres server in both places.
+//
+// Statuses are stored as strings rather than enums so the set can grow
+// without a migration; the allowed values are validated in code, in
+// src/lib/orders.ts.
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Order {
+  id        String   @id @default(cuid())
+  /// Short human code the customer reads out on the phone, e.g. PKS-7QK2M.
+  reference String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  customerName String
+  phone        String
+  /// DELIVERY | PICKUP
+  orderType    String
+  address      String?
+  notes        String?
+
+  /// COD | CARD | WALLET
+  paymentMethod String
+  /// PENDING | PAID | FAILED — COD orders stay PENDING until handed over.
+  paymentStatus String @default("PENDING")
+
+  // Money is stored in whole rupees. PKR has no subunit in practice, and
+  // integers keep totals from drifting the way floats do.
+  subtotal  Int
+  taxRate   Int
+  taxAmount Int
+  total     Int
+
+  /// PLACED | CONFIRMED | PREPARING | READY | ON_THE_WAY | COMPLETED | CANCELLED
+  status String @default("PLACED")
+
+  items OrderItem[]
+
+  @@index([createdAt])
+  @@index([status])
+}
+
+model OrderItem {
+  id      String @id @default(cuid())
+  orderId String
+  order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  /// Menu item id at the time of ordering.
+  itemId String
+
+  // The name and price are copied in rather than looked up later. If the
+  // kitchen raises a price next month, this order must still show what the
+  // customer was actually charged.
+  nameEn    String
+  nameUr    String
+  variantEn String?
+  variantUr String?
+  unitPrice Int
+  quantity  Int
+  lineTotal Int
+
+  @@index([orderId])
+}
+
+/// Staff accounts. There is no public sign-up — the owner creates these.
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  name         String
+  passwordHash String
+  /// OWNER | MANAGER
+  role         String   @default("MANAGER")
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  lastLoginAt  DateTime?
+
+  availabilityChanges ItemAvailability[]
+}
+
+/// Which menu items are off today.
+///
+/// The menu itself lives in data/menu.json — it is the printed card and it
+/// does not change often. What changes daily is whether the kitchen still
+/// has trout, so only that lives here. A row exists only for items whose
+/// state has ever been touched; everything else is available by default.
+model ItemAvailability {
+  /// Menu item id from data/menu.json.
+  itemId    String   @id
+  soldOut   Boolean  @default(false)
+  updatedAt DateTime @updatedAt
+
+  updatedById String?
+  updatedBy   User?   @relation(fields: [updatedById], references: [id], onDelete: SetNull)
+}
+
+/// A customer review. Nothing appears on the site until a staff member
+/// approves it — an open review box on a restaurant site fills with spam
+/// within a week.
+model Review {
+  id        String   @id @default(cuid())
+  name      String
+  /// 1–5.
+  rating    Int
+  comment   String
+  /// Which language the customer wrote in, so we render it in the right script.
+  locale    String   @default("en")
+  approved  Boolean  @default(false)
+  /// Set when a staff member hides an approved review again.
+  hidden    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  reviewedAt DateTime?
+
+  @@index([approved, createdAt])
+}
+
+/// A message from the contact form, or a catering / event enquiry.
+model Enquiry {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String
+  email     String?
+  /// GENERAL | EVENT | FEEDBACK
+  kind      String   @default("GENERAL")
+  /// Only meaningful for EVENT: roughly how many guests.
+  guests    Int?
+  /// Only meaningful for EVENT: the date they have in mind.
+  eventDate String?
+  message   String
+  /// NEW | HANDLED
+  status    String   @default("NEW")
+  createdAt DateTime @default(now())
+
+  @@index([status, createdAt])
+}
