@@ -35,18 +35,18 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/node": "^20",
+    "@types/bcryptjs": "^3.0.0",
+    "@types/node": "^26",
     "@types/pg": "^8.23.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/three": "^0.185.4",
     "dotenv": "^17.4.2",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.4",
+    "eslint": "^10",
+    "eslint-config-next": "16.3.5",
     "prisma": "^7.10.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^7"
   },
   "description": "Pak Khyber Shinwari — Margalla, GT Road"
 }
