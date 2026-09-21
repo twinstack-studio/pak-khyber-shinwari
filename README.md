@@ -11,7 +11,7 @@ order. The restaurant's staff run orders, sold-out items, reviews and messages
 from their own dashboard.
 
 [**Open the live site**](https://pak-khyber-shinwari.vercel.app) ·
-[**Work with TwinStack Studio**](mailto:hello.twinstackstudio@gmail.com)
+[**Work with TwinStack Studio**](https://twinstackstudio.com/contact)
 
 ![Pak Khyber Shinwari homepage](./assets/pak-khyber-shinwari.png)
 
@@ -118,6 +118,6 @@ portals, automation, and AI-powered products.
 
 [GitHub](https://github.com/twinstack-studio) ·
 [Website](https://twinstackstudio.com) ·
-[Email](mailto:hello.twinstackstudio@gmail.com)
+[Email](mailto:hello@twinstackstudio.com)
 
 © 2026 TwinStack Studio. All rights reserved. See [LICENSE](./LICENSE).
