@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/twinstack-studio/pak-khyber-shinwari/actions/workflows/ci.yml/badge.svg)](https://github.com/twinstack-studio/pak-khyber-shinwari/actions/workflows/ci.yml)
 [![License: All rights reserved](https://img.shields.io/badge/License-All_rights_reserved-8b1d1d.svg)](./LICENSE)
-[![Live Site](https://img.shields.io/badge/Live_Site-Open_Website-8b1d1d.svg)](https://pak-khyber-shinwari.vercel.app)
+[![Live Site](https://img.shields.io/badge/Live_Site-Open_Website-8b1d1d.svg)](https://pks.twinstackstudio.com)
 
 A bilingual website and online ordering system for Pak Khyber Shinwari, a
 Shinwari restaurant on the GT Road at Margalla. Guests can browse the full menu
@@ -10,7 +10,7 @@ in English or Urdu, plan a meal for a group, and place a delivery or pickup
 order. The restaurant's staff run orders, sold-out items, reviews and messages
 from their own dashboard.
 
-[**Open the live site**](https://pak-khyber-shinwari.vercel.app) ·
+[**Open the live site**](https://pks.twinstackstudio.com) ·
 [**Work with TwinStack Studio**](https://twinstackstudio.com/contact)
 
 ![Pak Khyber Shinwari homepage](./assets/pak-khyber-shinwari.png)
